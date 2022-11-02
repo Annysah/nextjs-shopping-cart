@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 
 import Navbar from "../components/Navbar";
 import WelcomePage from "../components/WelcomePage";
-import { XataClient } from "../lib/xata";
 
 export default function Home() {
   return (
@@ -24,14 +23,3 @@ export default function Home() {
     </div>
   );
 }
-
-/*const xata = new XataClient()
-
-export const getServerSideProps = async () => {
-  const products = await xata.db.products.getMany()
-  return {
-    props: {
-      products,
-    },
-  }
-}*/
