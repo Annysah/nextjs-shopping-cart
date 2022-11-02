@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Anisat-Akinbani-s-workspace-j5rl3n.us-east-1.xata.sh/db/plantly",
+  "codegen": {
+    "output": "lib/xata.ts"
+  }
+}
