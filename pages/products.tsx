@@ -9,7 +9,7 @@ import { useProducts } from "../context/appContext";
 import { Products, XataClient } from "../lib/xata";
 
 type Props = NonNullable<
-  Awaited<ReturnType<typeof getStaticProps>>["props"]
+  Awaited<ReturnType<typeof getServerSideProps>>["props"]
 >;
 
 export interface CartItem {
@@ -70,7 +70,7 @@ const Products: FC<Props> = ({ products }) => {
 
 export default Products;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const xata = new XataClient();
   const products = await xata.db.products.getMany();
   return {
