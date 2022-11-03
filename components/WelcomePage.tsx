@@ -12,7 +12,7 @@ const WelcomePage = () => {
                 Get up to <span className="text-green-900">20% discount</span>{" "}
                 on every purchase
               </h1>
-              <p className="text-lg">Great deals you don't want to miss!.</p>
+              <p className="text-lg">Great deals you don&apos;t want to miss!.</p>
               <div className="flex flex-row-reverse flex-wrap justify-center gap-4 md:gap-6 md:justify-end">
                 <Link href="/products">
                   <button
