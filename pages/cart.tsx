@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import CartItem from "../components/CartItems";
-import { useProducts } from "../context/appContext";
-import { CartItemProp } from "../context/appContext";
+import { CartItemProp, useProducts } from "../context/appContext";
 
 const Cart = () => {
   const { cartItems, onAddToCart, onRemoveFromCart } = useProducts();

@@ -1,21 +1,11 @@
 import { useState, createContext, useContext } from "react";
 
-import { Products, XataClient } from "../lib/xata";
+import { Products } from "../lib/xata";
 
 export interface CartItemProp {
   product: Products;
   quantity: number;
 }
-
-export const getServerSideProps = async () => {
-  const xata = new XataClient();
-  const products = await xata.db.products.getAll();
-  return {
-    props: {
-      products,
-    },
-  };
-};
 
 //type for our context
 type ProductsContextType = {

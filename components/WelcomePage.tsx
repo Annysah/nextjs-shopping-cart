@@ -16,7 +16,6 @@ const WelcomePage = () => {
                 <Link href="/products">
                   <button
                     type="button"
-                    title="Start buying"
                     className="w-full py-3 px-6 text-center rounded-xl transition bg-green-500 shadow-xl hover:bg-gray-600 active:bg-gray-700 focus:bg-gray-600 sm:w-max"
                   >
                     <span className="block text-white font-semibold">

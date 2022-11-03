@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import Navbar from "../components/Navbar";
@@ -12,7 +11,7 @@ export default function Home() {
         <title>Ecommerce App</title>
         <meta
           name="description"
-          content="This is an ecommerce application built with Nextjs, Typescript, Xata & Cloudinary."
+          content="This is a shopping cart application built with Nextjs, Typescript, Xata & Cloudinary."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
