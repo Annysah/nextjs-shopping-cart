@@ -68,9 +68,8 @@ const Products: FC<Props> = ({ products }) => {
   );
 };
 
-const xata = new XataClient();
-
 export const getServerSideProps = async () => {
+  const xata = new XataClient();
   const products = await xata.db.products.getMany();
   return {
     props: {
