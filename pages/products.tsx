@@ -68,6 +68,8 @@ const Products: FC<Props> = ({ products }) => {
   );
 };
 
+export default Products;
+
 export const getServerSideProps = async () => {
   const xata = new XataClient();
   const products = await xata.db.products.getMany();
@@ -77,5 +79,3 @@ export const getServerSideProps = async () => {
     },
   };
 };
-
-export default Products;
